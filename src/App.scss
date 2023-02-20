@@ -1,0 +1,55 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 10px 20px 20px;
+  max-width: 600px;
+  min-width: 288px;
+  border-radius: 12px;
+  background-color: rgb(10, 27, 184);
+}
+
+h1 {
+  text-align: center;
+}
+
+.container h2 {
+  color: white;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+  text-align: center;
+}
+
+.btn {
+  color: rgb(10, 27, 184);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px solid rgb(10, 27, 184);
+  display: flex;
+  font-size: 20px;
+  background: rgb(211, 216, 253);
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+section div,
+section p {
+  display: flex;
+  padding: 0 20px;
+  margin-top: 0px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+section p {
+  padding-bottom: 20px;
+}
+
+section > div.closed {
+  margin-bottom: 20px;
+}
