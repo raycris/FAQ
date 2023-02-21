@@ -6,7 +6,9 @@ const Question = ({ question }: any) => {
     <section>
       <div className={isOpen ? "open" : "clased"}>
         <h4>{question.title}</h4>
-        <button onClick={() => setIsOpen(!isOpen)} className="btn">{isOpen ? "-" : "+"}</button>
+        <button onClick={() => setIsOpen(!isOpen)} className="btn">
+          {isOpen ? "-" : "+"}
+        </button>
       </div>
       {isOpen && <p>{question.info}</p>}
     </section>
