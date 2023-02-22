@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import "./Question.css"
+
 const Question = ({ question }: any) => {
   const [isOpen, setIsOpen] = useState(false);
   return (

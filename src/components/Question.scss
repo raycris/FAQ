@@ -1,0 +1,17 @@
+section div,
+section p {
+  display: flex;
+  padding: 0 20px;
+  margin-top: 0px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+section p {
+  padding-bottom: 20px;
+}
+
+section > div.closed {
+  margin-bottom: 20px;
+}
