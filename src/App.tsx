@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 import Question from "./components/Question";
 
-import Switch from "react-switch";
+import Header from "./components/Header";
 
 import "./App.css";
 
@@ -24,7 +24,6 @@ const questions = [
   },
 ];
 
-// export const ThemeContext = createContext("light")
 export const ThemeContext = createContext(null);
 
 function App() {
@@ -32,17 +31,12 @@ function App() {
   const toggleTheme = () => {
     setTheme((current) => (current === "light" ? "dark" : "light"));
   };
+  
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
+        <Header theme={theme} toggleTheme={toggleTheme} />
         <h1>FAQ section</h1>
-        <div className="switchConatiner">
-          <div></div>
-          <div className="infoContainer">
-            <label >{theme === "light" ? "Light Mode" : "Dark Mode"}</label>
-            <Switch onChange={toggleTheme} checked={theme === "dark"} />
-          </div>
-        </div>
         <div className="container">
           <h2>Frequently Asked questions</h2>
           <div className="questions">
