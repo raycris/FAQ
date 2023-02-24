@@ -54,15 +54,10 @@ label {
   color: #fff; }
 
 .container h2 {
+  color: #fff;
   margin: 0 auto;
   padding: 10px 0 20px 0;
   text-align: center; }
-
-#light .container h2 {
-  color: #fff; }
-
-#dark .container h2 {
-  color: #000000; }
 
 .btn {
   width: 40px;
