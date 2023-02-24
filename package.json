@@ -11,8 +11,13 @@
     "watch:css": "npm run build:css && node-sass src/ -o src/ -w -r"
   },
   "dependencies": {
+    "@radix-ui/react-select": "^1.2.0",
+    "i18next": "^22.4.10",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.0",
     "react-switch": "^7.0.0"
   },
   "devDependencies": {
