@@ -28,8 +28,8 @@ body {
   background-color: #b80a0a; }
 
 h1 {
-  text-align: center;
-  margin-top: 0; }
+  margin-top: 0;
+  text-align: center; }
 
 #light h1 {
   color: #1d1d1d; }

@@ -1,3 +1,5 @@
+@import "./styles.scss";
+
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,10 +14,10 @@ body {
 }
 
 #light {
-  background-color: #e6e5e5;
+  background-color: $lightBackground;
 }
 #dark {
-  background-color: #1d1d1d;
+  background-color: $darkBackground;
 }
 
 .container {
@@ -27,20 +29,20 @@ body {
 }
 
 #light .container {
-  background-color: rgb(10, 27, 184);
+  background-color: $blue;
 }
 
 #dark .container {
-  background-color: rgb(184, 10, 10);
+  background-color: $red;
 }
 
 h1 {
-  text-align: center;
   margin-top: 0;
+  text-align: center;
 }
 
 #light h1 {
-  color: #1d1d1d;
+  color: $darkBackground;
 }
 
 #dark h1 {
@@ -61,7 +63,7 @@ label {
 }
 
 #light .infoContainer label {
-  color: #1d1d1d;
+  color: $darkBackground;
 }
 
 #dark .infoContainer label {
@@ -87,13 +89,13 @@ label {
 }
 
 #light .btn {
-  color: rgb(10, 27, 184);
-  border: 2px solid rgb(10, 27, 184);
+  color: $blue;
+  border: 2px solid $blue;
   background: rgb(211, 216, 253);
 }
 
 #dark .btn {
-  color: rgb(184, 10, 10);
-  border: 2px solid rgb(184, 10, 10);
+  color: $red;
+  border: 2px solid $red;
   background: rgb(253, 211, 211);
 }
